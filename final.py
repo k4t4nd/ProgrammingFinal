@@ -215,16 +215,16 @@ def click_button():
 st.button('Predict :sparkles:', on_click=click_button)
 
 if (st.session_state.clicked) & (result[0]==1):
-    st.subheader(f"{name}, you are likely a LinkedIn user! The probability of you using LinkedIn is {(round((result_prob[0][1]),2))}.")
+    st.subheader(f"{name}, you are likely to be a LinkedIn user! The probability of you using LinkedIn is {(round((result_prob[0][1]),2))}.")
     col1, col2 = st.columns(2)
     with col1:
         st.image("gtown.jpg",width=300)
     with col2:
-        st.text("\nThis app was created by a Programming II \nstudent as part of Georgetown's Master \nof Science in Business Analytics program. \nUsing a dataset with features for social \nmedia usage and other predictory \ndemographics, the app applies logistic \nregression to determine the \nprobability of an individual being a \nLinkedIn user. I hope you are happy with \nyour results!")
+        st.text("\nThis app was created by a Programming II \nstudent as part of Georgetown's Master's \nof Science in Business Analytics program. \nUsing a dataset with features for social \nmedia usage and other predictory \ndemographics, the app applies logistic \nregression to determine the \nprobability of an individual being a \nLinkedIn user. I hope you are happy with \nyour results!")
 elif(st.session_state.clicked) & (result[0]==0):
     st.subheader(f"{name}, you aren't likely to be a LinkedIn user. The probability of you using LinkedIn is {(round((result_prob[0][1]),2))}.")
     col1, col2 = st.columns(2)
     with col1:
         st.image("gtown.jpg",width=300)
     with col2:
-        st.text("\nThis app was created by a Programming II \nstudent as part of Georgetown's Master \nof Science in Business Analytics program. \nUsing a dataset with features for social \nmedia usage and other predictory \ndemographics, the app applies logistic \nregression to determine the \nprobability of an individual being a \nLinkedIn user. I hope you are happy with \nyour results!")
+        st.text("\nThis app was created by a Programming II \nstudent as part of Georgetown's Master's \nof Science in Business Analytics program. \nUsing a dataset with features for social \nmedia usage and other predictory \ndemographics, the app applies logistic \nregression to determine the \nprobability of an individual being a \nLinkedIn user. I hope you are happy with \nyour results!")
